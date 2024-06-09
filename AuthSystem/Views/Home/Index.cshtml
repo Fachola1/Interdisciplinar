@@ -2,8 +2,34 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-    <p>User Id : @ViewData["UserID"]</p>
+<link rel="stylesheet" href="~/css/Index.css" asp-append-version="true" />
+
+<div class="landing-page">
+    <header>
+        <div class="container">
+            <a href="" class="logo">Easy <b style="color: #6c63ff;">Pass</b></a>
+        </div>
+    </header>
+    <div class="content">
+        <div class="container">
+            <div class="info">
+                <h1>Seja bem-vindo, <b style="color: #6c63ff;">ESTUDANTE</b></h1>
+                <p>Cansado da burocracia de renovar seu passe estudantil? A Easy Pass tem a solução! Com nosso sistema web, renovar seu passe é fácil e rápido. Vamos começar agora mesmo?</p>
+            </div>
+            <div class="image">
+                <img src="https://i.postimg.cc/T2WhFP8X/double-decker-bus-rafiki.png">
+            </div>
+        </div>
+    </div>
 </div>
+
+<style>
+    .landing-page header .logo {
+        display: flex;
+        align-items: center; /* Centralizar verticalmente */
+        color: #5d5d5d;
+        font-style: italic;
+        text-transform: uppercase;
+        font-size: 20px;
+    }
+</style>

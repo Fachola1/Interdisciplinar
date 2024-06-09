@@ -21,7 +21,7 @@ namespace AuthSystem.Controllers
 
         public IActionResult Index()
         {
-            ViewData["UserID"]=_userManager.GetUserId(this.User);
+            ViewData["UserName"]=_userManager.GetUserName(this.User);
             return View();
         }
 
@@ -30,10 +30,22 @@ namespace AuthSystem.Controllers
             return View();
         }
 
+        public IActionResult Sobre()
+        {
+            return View();
+        }
+
+        public IActionResult Recarregar()
+        {
+            return View();
+        }
+
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+
     }
 }

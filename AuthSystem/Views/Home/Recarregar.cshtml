@@ -1,0 +1,144 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enviar Documentação</title>
+
+    <link rel="stylesheet" href="~/css/Recarregar.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" asp-append-version="true" />
+    <style>
+        .check-icon {
+            display: none; /* Inicialmente oculto */
+            width: 40px; /* Largura da imagem */
+            height: auto; /* Altura automática para manter a proporção */
+        }
+    </style>
+</head>
+<body>
+
+    <h1 class="titulo-pagina">Enviar <b style="color: #6c63ff;">Documentação</b></h1>
+    <br />
+    <label for="rg_frente" class="drop-container">
+        <span class="drop-title">RG (Frente)</span>
+        <input type="file" id="rg_frente" accept="image/*" onchange="showCheckIcon('rg_frente')" required>
+        <img src="https://i.postimg.cc/NfN5T1BT/marca-de-verificacao.png" class="check-icon" id="rg_frente_check">
+    </label>
+    <br />
+    <label for="rg_verso" class="drop-container">
+        <span class="drop-title">RG (Verso)</span>
+        <input type="file" id="rg_verso" accept="image/*" onchange="showCheckIcon('rg_verso')" required>
+        <img src="https://i.postimg.cc/NfN5T1BT/marca-de-verificacao.png" class="check-icon" id="rg_verso_check">
+    </label>
+    <br />
+    <label for="relatorio_fatec" class="drop-container">
+        <span class="drop-title">Relatório de Frequência - FATEC</span>
+        <input type="file" id="relatorio_fatec" accept="image/*" onchange="showCheckIcon('relatorio_fatec')" required>
+        <img src="https://i.postimg.cc/NfN5T1BT/marca-de-verificacao.png" class="check-icon" id="relatorio_fatec_check">
+    </label>
+    <br />
+    <label for="foto_3x4" class="drop-container">
+        <span class="drop-title">Foto 3x4</span>
+        <input type="file" id="foto_3x4" accept="image/*" onchange="showCheckIcon('foto_3x4')" required>
+        <img src="https://i.postimg.cc/NfN5T1BT/marca-de-verificacao.png" class="check-icon" id="foto_3x4_check">
+    </label>
+    <br />
+    <label for="documento_ra" class="drop-container">
+        <span class="drop-title">Documento RA</span>
+        <input type="file" id="documento_ra" accept="image/*" onchange="showCheckIcon('documento_ra')" required>
+        <img src="https://i.postimg.cc/NfN5T1BT/marca-de-verificacao.png" class="check-icon" id="documento_ra_check">
+    </label>
+    <br />
+
+    <div class="dados-cartao">
+        <h1 class="titulo-pagina">Dados do <b style="color: #6c63ff;">Cartão</b></h1>
+        <div class="form-group">
+            <label for="nomeCartao">Nome no Cartão</label>
+            <input type="text" class="form-control" id="nomeCartao" placeholder="Digite o nome no cartão" required>
+        </div>
+
+        <div class="form-row">
+            <div class="col">
+                <div class="form-group">
+                    <label for="numeroCartao">Número do Cartão</label>
+                    <input type="text" class="form-control" id="numeroCartao" placeholder="0000 0000 0000 0000" maxlength="19" required>
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-group">
+                    <label for="dataValidade">Data de Validade</label>
+                    <input type="text" class="form-control" id="dataValidade" placeholder="MM/YY" maxlength="5" required>
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-group">
+                    <label for="cvv">CVV</label>
+                    <input type="text" class="form-control" id="cvv" placeholder="123" maxlength="3" required>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="valor-recarga">
+        <label for="valorRecarga">Valor a ser recarregado (Máximo: <b>R$50,00</b>):</label>
+        <div class="input-group">
+            <span class="input-group-text"><b>R$</b></span>
+            <input type="number" id="valorRecarga" name="valorRecarga" min="0" max="50" step="1" required>
+        </div>
+    </div>
+    <br />
+    <div class="container">
+        <div class="justify-content-center">
+            <button type="submit" class="btn-primary">ENVIAR</button>
+        </div>
+    </div>
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <script>
+        function showCheckIcon(inputId) {
+            var checkIcon = document.getElementById(inputId + "_check");
+            checkIcon.style.display = "inline"; // Exibe o ícone de verificação
+        }
+
+        document.getElementById("numeroCartao").addEventListener("input", function (event) {
+            var inputValue = event.target.value.replace(/\s/g, ''); // Remove espaços em branco
+            var formattedValue = '';
+            for (var i = 0; i < inputValue.length; i++) {
+                if (i > 0 && i % 4 === 0) { // Adiciona um espaço a cada 4 caracteres
+                    formattedValue += ' ';
+                }
+                formattedValue += inputValue[i];
+            }
+            event.target.value = formattedValue;
+
+            if (inputValue.length !== 16) { // Verifica se o número do cartão tem 16 dígitos
+                event.target.classList.add("error-border"); // Adiciona classe para borda vermelha
+            } else {
+                event.target.classList.remove("error-border"); // Remove a classe de borda vermelha
+            }
+        });
+
+        document.getElementById("numeroCartao").addEventListener("focus", function (event) {
+            event.target.classList.add("error-border");
+        });
+
+        document.getElementById("numeroCartao").addEventListener("blur", function (event) {
+            var inputValue = event.target.value.replace(/\s/g, '');
+            if (inputValue.length === 16) {
+                event.target.classList.remove("error-border");
+            }
+        });
+
+        document.getElementById("dataValidade").addEventListener("input", function (event) {
+            var inputValue = event.target.value;
+            if (inputValue.length === 2 && inputValue.indexOf('/') === -1) {
+                event.target.value = inputValue + '/';
+            }
+        });
+    </script>
+
+</body>
+</html>

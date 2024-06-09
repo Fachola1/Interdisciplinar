@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\YouTube\\Videos\\Asp.Net Core\\MVC - SignUp, Login and Role\\Project\\AuthSystem\\AuthSystem\\AuthSystem.csproj": {}
+    "C:\\Users\\gfach\\Desktop\\TesteProject\\Asp.Net-Core-MVC-Identity---Complete-User-Authentication-System\\AuthSystem\\AuthSystem.csproj": {}
   },
   "projects": {
-    "D:\\YouTube\\Videos\\Asp.Net Core\\MVC - SignUp, Login and Role\\Project\\AuthSystem\\AuthSystem\\AuthSystem.csproj": {
+    "C:\\Users\\gfach\\Desktop\\TesteProject\\Asp.Net-Core-MVC-Identity---Complete-User-Authentication-System\\AuthSystem\\AuthSystem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\YouTube\\Videos\\Asp.Net Core\\MVC - SignUp, Login and Role\\Project\\AuthSystem\\AuthSystem\\AuthSystem.csproj",
+        "projectUniqueName": "C:\\Users\\gfach\\Desktop\\TesteProject\\Asp.Net-Core-MVC-Identity---Complete-User-Authentication-System\\AuthSystem\\AuthSystem.csproj",
         "projectName": "AuthSystem",
-        "projectPath": "D:\\YouTube\\Videos\\Asp.Net Core\\MVC - SignUp, Login and Role\\Project\\AuthSystem\\AuthSystem\\AuthSystem.csproj",
-        "packagesPath": "C:\\Users\\CodAffection\\.nuget\\packages\\",
-        "outputPath": "D:\\YouTube\\Videos\\Asp.Net Core\\MVC - SignUp, Login and Role\\Project\\AuthSystem\\AuthSystem\\obj\\",
+        "projectPath": "C:\\Users\\gfach\\Desktop\\TesteProject\\Asp.Net-Core-MVC-Identity---Complete-User-Authentication-System\\AuthSystem\\AuthSystem.csproj",
+        "packagesPath": "C:\\Users\\gfach\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\gfach\\Desktop\\TesteProject\\Asp.Net-Core-MVC-Identity---Complete-User-Authentication-System\\AuthSystem\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\CodAffection\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\gfach\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,6 +25,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -34,6 +38,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -42,25 +51,29 @@
           "dependencies": {
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[7.0.3, )"
+              "version": "[7.0.18, )"
             },
             "Microsoft.AspNetCore.Identity.UI": {
               "target": "Package",
-              "version": "[7.0.3, )"
+              "version": "[7.0.18, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[7.0.3, )"
+              "version": "[7.0.18, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[7.0.18, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[7.0.3, )"
+              "version": "[7.0.18, )"
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
-              "version": "[7.0.4, )"
+              "version": "[7.0.12, )"
             }
           },
           "imports": [
@@ -82,7 +95,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     }
