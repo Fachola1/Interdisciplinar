@@ -1,9 +1,15 @@
-﻿<!DOCTYPE html>
+﻿@model AuthSystem.Models.RecargaModel
+
+@{
+    ViewData["Title"] = "Recarregar";
+}
+
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enviar Documentação</title>
+    <title>Recarregar</title>
 
     <link rel="stylesheet" href="~/css/Recarregar.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" asp-append-version="true" />
@@ -53,8 +59,8 @@
     <div class="dados-cartao">
         <h1 class="titulo-pagina">Dados do <b style="color: #6c63ff;">Cartão</b></h1>
         <div class="form-group">
-            <label for="nomeCartao">Nome no Cartão</label>
-            <input type="text" class="form-control" id="nomeCartao" placeholder="Digite o nome no cartão" required>
+            <label for="NomeUsuario">Nome no Cartão</label>
+            <input type="text" class="form-control" id="numeroCartao" placeholder="Nome" maxlength="50" required>
         </div>
 
         <div class="form-row">
@@ -79,19 +85,22 @@
         </div>
     </div>
 
-    <div class="valor-recarga">
-        <label for="valorRecarga">Valor a ser recarregado (Máximo: <b>R$50,00</b>):</label>
-        <div class="input-group">
-            <span class="input-group-text"><b>R$</b></span>
-            <input type="number" id="valorRecarga" name="valorRecarga" min="0" max="50" step="1" required>
+    <form asp-controller="Recarga" asp-action="Enviar" method="post">
+        <div class="valor-recarga">
+            <label for="ValorRecarga">Valor a ser recarregado (Máximo: <b>R$50,00</b>):</label>
+            <div class="input-group">
+                <span class="input-group-text"><b>R$</b></span>
+                <input type="number" id="ValorRecarga" name="ValorRecarga" asp-for="ValorRecarga" min="0" max="50" step="1" required>
+                <span asp-validation-for="ValorRecarga" class="text-danger"></span>
+            </div>
         </div>
-    </div>
-    <br />
-    <div class="container">
-        <div class="justify-content-center">
-            <button type="submit" class="btn-primary">ENVIAR</button>
+        <br />
+        <div class="container">
+            <div class="justify-content-center">
+                <button type="submit" class="btn btn-primary">ENVIAR</button>
+            </div>
         </div>
-    </div>
+    </form>
 
     <br />
     <br />

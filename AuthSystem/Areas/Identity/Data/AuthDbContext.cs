@@ -1,4 +1,5 @@
 ﻿using AuthSystem.Areas.Identity.Data;
+using AuthSystem.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
@@ -11,6 +12,9 @@ public class AuthDbContext : IdentityDbContext<ApplicationUser>
         : base(options)
     {
     }
+
+    public DbSet<RecargaModel> Recargas { get; set; }
+    public DbSet<HorarioOnibusModel> HorarioOnibus { get; set; }
 
     protected override void OnModelCreating(ModelBuilder builder)
     {

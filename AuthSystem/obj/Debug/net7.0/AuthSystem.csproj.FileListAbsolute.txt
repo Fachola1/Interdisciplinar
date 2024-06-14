@@ -826,14 +826,13 @@ C:\Users\gfach\Desktop\TesteProject\Asp.Net-Core-MVC-Identity---Complete-User-Au
 C:\Users\gfach\Desktop\TesteProject\Asp.Net-Core-MVC-Identity---Complete-User-Authentication-System\AuthSystem\bin\Debug\net7.0\zh-CN\Humanizer.resources.dll
 C:\Users\gfach\Desktop\TesteProject\Asp.Net-Core-MVC-Identity---Complete-User-Authentication-System\AuthSystem\bin\Debug\net7.0\zh-Hans\Humanizer.resources.dll
 C:\Users\gfach\Desktop\TesteProject\Asp.Net-Core-MVC-Identity---Complete-User-Authentication-System\AuthSystem\bin\Debug\net7.0\zh-Hant\Humanizer.resources.dll
-C:\Users\gfach\Desktop\TesteProject\Asp.Net-Core-MVC-Identity---Complete-User-Authentication-System\AuthSystem\bin\Debug\net7.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
-C:\Users\gfach\Desktop\TesteProject\Asp.Net-Core-MVC-Identity---Complete-User-Authentication-System\AuthSystem\bin\Debug\net7.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
-C:\Users\gfach\Desktop\TesteProject\Asp.Net-Core-MVC-Identity---Complete-User-Authentication-System\AuthSystem\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
 C:\Users\gfach\Desktop\TesteProject\Asp.Net-Core-MVC-Identity---Complete-User-Authentication-System\AuthSystem\bin\Debug\net7.0\Microsoft.Data.Sqlite.dll
 C:\Users\gfach\Desktop\TesteProject\Asp.Net-Core-MVC-Identity---Complete-User-Authentication-System\AuthSystem\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Sqlite.dll
 C:\Users\gfach\Desktop\TesteProject\Asp.Net-Core-MVC-Identity---Complete-User-Authentication-System\AuthSystem\bin\Debug\net7.0\SQLitePCLRaw.batteries_v2.dll
 C:\Users\gfach\Desktop\TesteProject\Asp.Net-Core-MVC-Identity---Complete-User-Authentication-System\AuthSystem\bin\Debug\net7.0\SQLitePCLRaw.core.dll
 C:\Users\gfach\Desktop\TesteProject\Asp.Net-Core-MVC-Identity---Complete-User-Authentication-System\AuthSystem\bin\Debug\net7.0\SQLitePCLRaw.provider.e_sqlite3.dll
+C:\Users\gfach\Desktop\TesteProject\Asp.Net-Core-MVC-Identity---Complete-User-Authentication-System\AuthSystem\bin\Debug\net7.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\gfach\Desktop\TesteProject\Asp.Net-Core-MVC-Identity---Complete-User-Authentication-System\AuthSystem\bin\Debug\net7.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
 C:\Users\gfach\Desktop\TesteProject\Asp.Net-Core-MVC-Identity---Complete-User-Authentication-System\AuthSystem\bin\Debug\net7.0\runtimes\alpine-arm\native\libe_sqlite3.so
 C:\Users\gfach\Desktop\TesteProject\Asp.Net-Core-MVC-Identity---Complete-User-Authentication-System\AuthSystem\bin\Debug\net7.0\runtimes\alpine-arm64\native\libe_sqlite3.so
 C:\Users\gfach\Desktop\TesteProject\Asp.Net-Core-MVC-Identity---Complete-User-Authentication-System\AuthSystem\bin\Debug\net7.0\runtimes\alpine-x64\native\libe_sqlite3.so
@@ -857,3 +856,4 @@ C:\Users\gfach\Desktop\TesteProject\Asp.Net-Core-MVC-Identity---Complete-User-Au
 C:\Users\gfach\Desktop\TesteProject\Asp.Net-Core-MVC-Identity---Complete-User-Authentication-System\AuthSystem\bin\Debug\net7.0\runtimes\win-arm64\native\e_sqlite3.dll
 C:\Users\gfach\Desktop\TesteProject\Asp.Net-Core-MVC-Identity---Complete-User-Authentication-System\AuthSystem\bin\Debug\net7.0\runtimes\win-x64\native\e_sqlite3.dll
 C:\Users\gfach\Desktop\TesteProject\Asp.Net-Core-MVC-Identity---Complete-User-Authentication-System\AuthSystem\bin\Debug\net7.0\runtimes\win-x86\native\e_sqlite3.dll
+C:\Users\gfach\Desktop\TesteProject\Asp.Net-Core-MVC-Identity---Complete-User-Authentication-System\AuthSystem\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
